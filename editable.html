@@ -1,0 +1,833 @@
+<!DOCTYPE html><html class="" lang=""><head><script type="text/javascript" class="silex-json-styles" data-silex-static="">
+    window.silex = window.silex || {}
+    window.silex.data = {"site":{"width":1200},"pages":[{"id":"page-page-1","displayName":"Page 1","link":{"linkType":"LinkTypePage","href":"#!page-page-1"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false}]}</script>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.12">
+    <!-- End of generator meta tag -->
+    <script type="text/javascript" src="https://editor.silex.me/static/2.11/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.11/jquery-ui.js" data-silex-static="" data-silex-remove-publish=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.11/pageable.js" data-silex-static="" data-silex-remove-publish=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.11/front-end.js" data-silex-static=""></script>
+    <link rel="stylesheet" href="https://editor.silex.me/static/2.11/normalize.css" data-silex-static="">
+    <link rel="stylesheet" href="https://editor.silex.me/static/2.11/front-end.css" data-silex-static="">
+
+    <style type="text/css" class="silex-style">.nameInput {border-radius: 25px; border: 2px solid #6A7EE4; padding: 5px; text-align: center;}.nameInput:disabled {background: #dddddd;}.tables {border: 3px solid #6A7EE4; border-radius: 15px; margin-left: auto; margin-right: auto; padding: 16px;}.button {background-color: white; border: 2px solid #6A7EE4; color: black; padding: 8px 16px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; transition-duration: 0.4s; cursor: pointer; border-radius: 10px;}.button:hover {background-color: #cad1f5; border: 2px solid #6A7EE4; color: black;}.credit {text-align: center; font-size: 150%;}#title {font-family: Chalkduster, fantasy;}</style>
+    <script type="text/javascript" class="silex-script">window.onload = function() {
+   var p1 = 24;
+   var p2 = 23;
+   var p3 = 11;
+   var p4 = 2;
+   var p5 = 1;
+   var p6 = 0;
+   var p7 = 1;
+   var totalQ = p1 + p2 + p3 + p4 + p5 + p6 + p7;
+   document.getElementById("numOfQuotes1").innerHTML = p1;
+   document.getElementById("numOfQuotes2").innerHTML = p2;
+   document.getElementById("numOfQuotes3").innerHTML = p3;
+   document.getElementById("numOfQuotes4").innerHTML = p4;
+   document.getElementById("numOfQuotes5").innerHTML = p5;
+   document.getElementById("numOfQuotes6").innerHTML = p6;
+   document.getElementById("numOfQuotes7").innerHTML = p7;
+   document.getElementById("totalQuotes").innerHTML = totalQ;
+};
+function Ipeople() {
+  document.getElementById("name2").disabled = true;
+  document.getElementById("name3").disabled = true;
+  document.getElementById("name4").disabled = true;
+  document.getElementById("name5").disabled = true;
+  document.getElementById("name6").disabled = true;
+  document.getElementById("name7").disabled = true;
+  peopleNum = 1;
+}
+function IIpeople() {
+  document.getElementById("name2").disabled = false;
+  document.getElementById("name3").disabled = true;
+  document.getElementById("name4").disabled = true;
+  document.getElementById("name5").disabled = true;
+  document.getElementById("name6").disabled = true;
+  document.getElementById("name7").disabled = true;
+  peopleNum = 2;
+}
+function IIIpeople() {
+  document.getElementById("name2").disabled = false;
+  document.getElementById("name3").disabled = false;
+  document.getElementById("name4").disabled = true;
+  document.getElementById("name5").disabled = true;
+  document.getElementById("name6").disabled = true;
+  document.getElementById("name7").disabled = true;
+  peopleNum = 3;
+}
+function IVpeople() {
+  document.getElementById("name2").disabled = false;
+  document.getElementById("name3").disabled = false;
+  document.getElementById("name4").disabled = false;
+  document.getElementById("name5").disabled = true;
+  document.getElementById("name6").disabled = true;
+  document.getElementById("name7").disabled = true;
+  peopleNum = 4;
+}
+function Vpeople() {
+  document.getElementById("name2").disabled = false;
+  document.getElementById("name3").disabled = false;
+  document.getElementById("name4").disabled = false;
+  document.getElementById("name5").disabled = false;
+  document.getElementById("name6").disabled = true;
+  document.getElementById("name7").disabled = true;
+  peopleNum = 5;
+}
+function VIpeople() {
+  document.getElementById("name2").disabled = false;
+  document.getElementById("name3").disabled = false;
+  document.getElementById("name4").disabled = false;
+  document.getElementById("name5").disabled = false;
+  document.getElementById("name6").disabled = false;
+  document.getElementById("name7").disabled = true;
+  peopleNum = 6;
+}
+function VIIpeople() {
+  document.getElementById("name2").disabled = false;
+  document.getElementById("name3").disabled = false;
+  document.getElementById("name4").disabled = false;
+  document.getElementById("name5").disabled = false;
+  document.getElementById("name6").disabled = false;
+  document.getElementById("name7").disabled = false;
+  peopleNum = 7;
+}
+function characterNum() {
+  if (document.getElementById("characterNumInput").value == "1") {
+  Ipeople();
+  }
+  if (document.getElementById("characterNumInput").value == "2") {
+  IIpeople();
+  }
+  if (document.getElementById("characterNumInput").value == "3") {
+  IIIpeople();
+  }
+  if (document.getElementById("characterNumInput").value == "4") {
+  IVpeople();
+  }
+  if (document.getElementById("characterNumInput").value == "5") {
+  Vpeople();
+  }
+  if (document.getElementById("characterNumInput").value == "6") {
+  VIpeople();
+  }
+  if (document.getElementById("characterNumInput").value == "7") {
+  VIIpeople();
+  }
+}
+function charNum1() {
+ if (document.getElementById("characterNumInput").value == "1") {
+ return true;
+ }
+}
+function charNum2() {
+ if (document.getElementById("characterNumInput").value == "2") {
+ return true;
+ }
+}
+function charNum3() {
+ if (document.getElementById("characterNumInput").value == "3") {
+ return true;
+ }
+}
+function charNum4() {
+ if (document.getElementById("characterNumInput").value == "4") {
+ return true;
+ }
+}
+function charNum5() {
+ if (document.getElementById("characterNumInput").value == "5") {
+ return true;
+ }
+}
+function charNum6() {
+ if (document.getElementById("characterNumInput").value == "6") {
+ return true;
+ }
+}
+function charNum7() {
+ if (document.getElementById("characterNumInput").value == "7") {
+ return true;
+ }
+}
+function givePromptF() {
+  charNum1()
+  if (charNum1(true)) {
+  var peopleNum = 1;
+  } else {
+    charNum2()
+    if (charNum2(true)) {
+    var peopleNum = 2;
+    } else {
+      charNum3()
+      if (charNum3(true)) {
+      var peopleNum = 3;
+      } else {
+        charNum4()
+        if (charNum4(true)) {
+        var peopleNum = 4;
+        } else {
+          charNum5()
+          if (charNum5(true)) {
+          var peopleNum = 5;
+          } else {
+            charNum6()
+            if (charNum6(true)) {
+            var peopleNum = 6;
+            } else {
+              charNum7()
+              if (charNum7(true)) {
+              var peopleNum = 7;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+   var a = document.getElementById("line1");
+   var p1 = 24;
+   var p2 = 23;
+   var p3 = 11;
+   var p4 = 2;
+   var p5 = 1;
+   var p6 = 0;
+   var p7 = 1;
+     if (document.getElementById("name1").value.length == 0) {
+       document.getElementById("name1").value = "Character A";
+       var box1var = 1;
+     }
+     if (document.getElementById("name2").value.length == 0) {
+       document.getElementById("name2").value = "Character B";
+       var box2var = 1;
+     }
+     if (document.getElementById("name3").value.length == 0) {
+       document.getElementById("name3").value = "Character C";
+       var box3var = 1;
+     }
+     if (document.getElementById("name4").value.length == 0) {
+       document.getElementById("name4").value = "Character D";
+       var box4var = 1;
+     }
+     if (document.getElementById("name5").value.length == 0) {
+       document.getElementById("name5").value = "Character E";
+       var box5var = 1;
+     }
+     if (document.getElementById("name6").value.length == 0) {
+       document.getElementById("name6").value = "Character F";
+       var box6var = 1;
+     }
+     if (document.getElementById("name7").value.length == 0) {
+       document.getElementById("name7").value = "Character G";
+       var box7var = 1;
+     }
+   if (peopleNum == 1) {
+     var promptNum = Math.floor((Math.random() * p1) + 1);
+   if (promptNum == 1) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: This is not your average, everyday darkness. This is... ADVANCED darkness.";
+   }
+   if (promptNum == 2) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: I love you all dearly, very much, as my family, but I would bury a knife in any of your chests this exact second.";
+   }
+   if (promptNum == 3) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: Blackmail is such an ugly word. I prefer extortion. The X makes it sound cool.";
+   }
+   if (promptNum == 4) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: How do people not swear??? Like where does their anger go?? How do they show their enthusiasm??? What if they stub their toe??? Like saying golly gosh isn't really going to cut it Barbara.";
+   }
+   if (promptNum == 5) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: I wasn't hurt that badly. The doctor said all my bleeding was internal. That's where the blood's supposed to be.";
+   }
+   if (promptNum == 6) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: Being a pessimist is great. I'm always either right or pleasantly surprised.";
+   }
+   if (promptNum == 7) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: Well, I can't go to a bad movie by myself!<br><b>" + document.getElementById("name1").value + "</b>: What, am I gonna make sarcastic remarks to strangers?";
+   }
+   if (promptNum == 8) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + ", looking around the room at different objects</b>: This reminds me of prison. This reminds me of prison. This reminds me of prison.<br><b>" + document.getElementById("name1").value + "</b>: [sees a childhood photo on the wall]<br><b>" + document.getElementById("name1").value + "</b>: Ooh! OOH! This definitely reminds me of prison!";
+   }   
+   if (promptNum == 9) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: No one has the permission to smack my ass.";
+   }
+   if (promptNum == 10) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: Small talk is for losers, rate your current level of existential dread from 1-10.";
+   }
+   if (promptNum == 11) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: Jellyfish have survived 600 years without a brain.<br><b>" + document.getElementById("name1").value + "</b>: A ray of hope for my colleagues.";
+   }
+   if (promptNum == 12) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: So my dad asked me, &quotis your ex already seeing someone else?&quot<br><b>" + document.getElementById("name1").value + "</b>: AND HE DIDN'T EVEN ASK ABOUT ME";
+   }
+   if (promptNum == 13) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: I love all the teachers, but they are not the sharpest knives in the drawer. They're not even the sharpest spoons in the drawer. Most of the time, they're not in the drawer at all. They're lost somewhere at the bottom of the dishwasher.";
+   }
+   if (promptNum == 14) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: Life is a party, and I'm the pi\u00f1ata.";
+   }
+   if (promptNum == 15) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>:  Today I had 800mg of caffeine, exercised for two hours, ate literally 80 pizza rolls, and took a long, relaxing bath.<br><b>" + document.getElementById("name1").value + "</b>: The line between self-care and self-destruction is a fine one, but boy, do I walk it hard.";
+   }
+   if (promptNum == 16) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: That's how we do it on Team " + document.getElementById("name1").value + ". Overthrow the law and look good doing it.";
+   }
+   if (promptNum == 17) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>:  I have goals. They are evil goals, but they are goals.";
+   } 
+   if (promptNum == 18) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>:  Not everyone is going to like me, and that's okay.<br><b>" + document.getElementById("name1").value + "</b>: They're wrong, though.";
+   }
+   if (promptNum == 19) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>:  The risk I took was calculated, but man, am I bad at math.";
+   }
+   if (promptNum == 20) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>:  Even if I wanted to express sympathy, I physically can't.";
+   }
+   if (promptNum == 21) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: Let's put it this way.<br><b>" + document.getElementById("name1").value + "</b>: If my father was drowning, I would pull up a lawn chair and watch.";
+   }
+   if (promptNum == 22) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: I'm pretty AND smart. I can't be mentally stable too. God has his favorites, but this is asking too much...";
+   }
+   if (promptNum == 23) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + ", being chased by a cop</b>: What do you want from me? I've never broken any of your stupid laws.<br><b>" + document.getElementById("name1").value + "</b>:  ...In front of you.";
+   }
+   if (promptNum == 24) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: An outsider might be tempted to say that it sucks to be me, but that's a common mistake<br><b>" + document.getElementById("name1").value + "</b>: It's AWESOME being me! What sucks is everything AROUND me!";
+   }
+ }
+   if (peopleNum == 2) {
+     var promptNum = Math.floor((Math.random() * p2) + 1);
+    if (promptNum == 1) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: I'm always incredibly appropriate. In high school, I was voted &quotMost Appropriate&quot <br><b>" + document.getElementById("name2").value + "</b>: Ooh, self burn! Those are rare.";
+   }
+    if (promptNum == 2) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: Know why I called you in here?<br><b>" + document.getElementById("name2").value + "</b>: Because I accidentally sent you a dick pic.<br><b>" + document.getElementById("name1").value + "</b>: [Stops pouring two glasses of wine.] Accidentally?";
+   }
+    if (promptNum == 3) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + ", texting " + document.getElementById("name2").value + "</b>: A theif.<br><b>" + document.getElementById("name2").value + "</b>: Thief?<br><b>" + document.getElementById("name1").value + "</b>: Theif.<br><b>" + document.getElementById("name2").value + "</b>: I before E except after C.<br><b>" + document.getElementById("name1").value + "</b>: Thceif.<br><b>" + document.getElementById("name2").value + "</b>: No.";
+   }
+    if (promptNum == 4) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: If I ask you a boy question, will you promise not to be weird?<br><b>" + document.getElementById("name2").value + "</b>: I promise.<br><b>" + document.getElementById("name1").value + "</b>: So, there's this guy at schoo- <br><b>" + document.getElementById("name2").value + "</b>: You can do better";
+   }
+   if (promptNum == 5) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: You know what? Underneath it all, you're actually quite nice.<br><b>" + document.getElementById("name2").value + "</b>: Repeat that disgusting slander again, and you'll be hearing from my lawyers.";
+   }
+   if (promptNum == 6) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: When I was young, I left a trail of broken hearts like a rockstar. I'm not proud of it.<br><b>" + document.getElementById("name2").value + "</b>: You're kind of proud of it. You work it into a lot of conversations.";
+   }
+   if (promptNum == 7) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: " + document.getElementById("name2").value + ", add 'zucchini' to that shopping list.<br><b>" + document.getElementById("name2").value + "</b>: [writing] Z-U-K-<br><b>" + document.getElementById("name1").value + "</b>: Nope.<br><b>" + document.getElementById("name2").value + "</b>: Z-O-O-K-<br><b>" + document.getElementById("name1").value + "</b>: No...<br><b>" + document.getElementById("name1").value + "</b>: Let's get corn instead.";
+   }
+   if (promptNum == 8) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: No, it would be against my moral compass.<br><b>" + document.getElementById("name2").value + "</b>: Your moral compass is a fucking roulette wheel!";
+   }
+   if (promptNum == 9) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: " + document.getElementById("name2").value + ", I think you should play the role of my father.<br><b>" + document.getElementById("name2").value + "</b>: I don't want to be your father.<br><b>" + document.getElementById("name1").value + "</b>: That's perfect. You already know your lines.";
+   }
+   if (promptNum == 10) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: If you're having dad problems, that's my jam, son!<br><b>" + document.getElementById("name2").value + "</b>: Real weird take on my crappy father.";
+   }
+   if (promptNum == 11) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: What's wrong with you?<br><b>" + document.getElementById("name2").value + "</b>: Off the top of my head, I'd say low self-esteem, and a genetic predisposition for anxiety and depression.";
+   }
+   if (promptNum == 12) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: Can you be quiet?! I'm trying to think.<br><b>" + document.getElementById("name2").value + "</b>: Don't worry. Doing anything for the first time is difficult.";
+   }
+   if (promptNum == 13) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: Name a way to be nice to others.<br><b>" + document.getElementById("name2").value + "</b>: Don't kill them.<br><b>" + document.getElementById("name1").value + "</b>: Setting the bar a little low, but I'll allow it.";
+   }
+   if (promptNum == 14) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: You go big or you go home. And you don't seem like the kind of person that goes home.<br><b>" + document.getElementById("name2").value + "</b>: I'm not. I don't even really have a home.";
+   }
+   if (promptNum == 15) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: I made tea.<br><b>" + document.getElementById("name2").value + "</b>: I don't want tea.<br><b>" + document.getElementById("name1").value + "</b>: I didn't make tea for you. This is my tea.<br><b>" + document.getElementById("name2").value + "</b>: Then why are you telling me?<br><b>" + document.getElementById("name1").value + "</b>: It's a conversation starter.<br><b>" + document.getElementById("name2").value + "</b>: That's a lousy conversation starter.<br><b>" + document.getElementById("name1").value + "</b>: Oh, is it? We're conversing. Checkmate.";
+   }
+   if (promptNum == 16) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: It must be so nice to be rich instead of having to develop a characterality.<br><b>" + document.getElementById("name2").value + "</b>: Quiet " + document.getElementById("name1").value + ".<br><b>" + document.getElementById("name1").value + "</b>: Buy my silence," + document.getElementById("name2").value + "!";
+   }
+   if (promptNum == 17) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>:You look handsome today<br><b>" + document.getElementById("name2").value +"</b>: Aww, thank y-<br><b>" + document.getElementById("name2").value + "</b>: HA! April Fools!<br><b>" + document.getElementById("name1").value + "</b>: You look beautiful EVERY DAY!";
+   }
+   if (promptNum == 18) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: " + document.getElementById("name2").value +"</b>!  Time to get out of bed, the sun is up!<br><b>" + document.getElementById("name2").value + "</b>: So? It's not like I need to photosynthesize or anything.";
+   }
+   if (promptNum == 19) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: That's not funny.<br><b>" + document.getElementById("name2").value + "</b>: I thought it was funny.<br><b>" +  document.getElementById("name1").value + "</b>: You don't count. You started laughing in the middle of a funeral because you started thinking of a meme you saw on Facebook.";
+   }
+  if (promptNum == 20) {
+    a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: I don't need to go to bed. I'm not tired and I still have work to do.<br><b>" + document.getElementById("name2").value + "</b>: But " + document.getElementById("name1").value + ", I'll be so lonely without you! Come curl up in my arms so I can feel whole again.<br><b>" + document.getElementById("name1").value + "</b>: ...Are you trying to seduce me into healthy sleeping habits?<br><b>" +  document.getElementById("name2").value + "</b>: Is it working?";
+  }
+   if (promptNum == 21) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: Before I do anything, I ask myself, would " + document.getElementById("name2").value + " do that? And if the answer is yes, I do not do that thing.";
+   }
+   if (promptNum == 22) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: Why are you helping me?<br><b>" + document.getElementById("name2").value + "</b>: Because my life is a mess and I instinctively take care of others when I don't know how to take care of myself.";
+   }
+    if (promptNum == 23) {
+    var toallcaps1 = document.getElementById("name1").value;
+     var allcaps1 = toallcaps1.toUpperCase();
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: So I can either bake these cookies at 400 degrees for 10 minutes or 4.000 degres for 1 minute.<br><b>" + document.getElementById("name2").value + "</b>: " + allcaps1 + " NO THAT'S NOT HOW YOU BAKE COOKIES<br><b>" + document.getElementById("name1").value + "</b>: FLOOR IT?<br><b>" + document.getElementById("name2").value + "</b>: " + allcaps1 + " NO<br><b>" + document.getElementById("name1").value + "</b>: HOW ABOUT 4.000.000 DEGREES FOR 1 SECOND<br><b>" + document.getElementById("name2").value + "</b>: " + allcaps1 + " YOU ARE GOING TO BURN THE HOUSE DOWN<br><b>" + document.getElementById("name1").value + "</b>: I'M GOING TO HARNESS THE FUCKING SUN TO MAKE COOKIES<br><b>" + document.getElementById("name2").value + "</b>: " + document.getElementById("name1").value + " P L E A S E";
+   }
+  }
+//2 (43)
+/*
+Agnes: Can you promise you won't get angry if I ask this?
+Balaur: I know I'll get angry, but go ahead. 
+*/
+/*
+Niko: Has anyone, ever, at any point in your life, told you they love you?
+Cicero:
+Cicero: Does family count?
+Niko: Yes.
+Cicero: Then no.
+*/
+/*
+Ángela: I'm going to grab some snacks. Anyone want anything while I'm up?
+Macaire: Oh, if you wouldn't mind, I'd love an apple!
+Ángela:
+Ángela: I said "snacks". 
+*/
+/*
+Sypha: I'm sorry. I should have listened to you.
+Niko: Yeah, I know. Everyone should listen to me all the time about everything. 
+*/
+/*
+Gyrlian: Permission to speak off the record?
+Seth: Granted.
+Gyrlian: You're a bastard. 
+*/
+/*
+Bash: You do this all the time! You still treat me like I'm seven years old!
+Calipso: So, what are you now? Eight?
+Bash: I'm sixteen!
+Calipso: Sixteen?
+Calipso: Well, you look like you're eight. 
+*/
+/*
+Vincent: You really need to start taking better care of yourself. I mean, when was the last time you even had a carrot?
+Marcel: Well, it's my least favorite type of cake, so, rarely. If I absolutely have to, I'll just eat the frosting. 
+*/
+/*
+Ediel: Do you have to call me "idiot" so much??
+Gyrlian: I said a lot of other nice things, okay? Toughen up, idiot. 
+*/
+/*
+Acacia: Look, just tell me the truth, okay? Because there's been a lot of lying in this family already.
+Dante / Marcus: And a lot of love!
+Acacia: More lies. 
+*/
+/*
+Jacques: Can I make a suggestion that you won't like?
+Vincent: Do you make any other kind?
+*/
+/*
+Macaire: Lying is wrong!
+Bash: Okay, but, what if we lied to get free birthday cake at a restaurant?
+Macaire:
+Macaire: Well-- 
+*/
+/*
+Gal: I brought you some food.
+Artem: [silently takes food]
+Gal: Can I get a "thank y-"
+Artem: [growling while slowly closing the door] 
+*/
+/*
+Seth, standing in front of the woods holding their hand out: Do you trust me?
+Gyrlian: No! This isn't Aladdin! 
+*/
+/*
+Macaire: Listen, Bash, I've been thinking about our current living situation and, uh... why are you smiling?
+Bash: I got a little surprise.
+Bash, pointing to a fish tank: Look, I got us a new fishie. I named him, uh... "Macaire", you know, after... after you.
+Macaire, leans down to look in tank: ...Well, that's not even a real fish. You know, that's a Goldfish Cracker
+Bash, in a serious tone: So, what's your point, man?
+Macaire: ...Okay, good night... you big, freak of nature... 
+*/
+/*
+Sypha: Let me guess your hometown, I bet it starts with.... s.
+Niko: Maybe.
+Sypha: Sexytown?
+Niko: No, it's the opposite of that.
+Sypha: DURMSTRANG?
+*/
+/*
+Sypha: How do I get you to not argue all the time?
+Margot: You don't. Arguing is kind of the only thing I've got going for me. 
+*/
+/*
+Macaire: Hey, I've seen worse.
+Antares: Really!?
+Macaire: No. We are most definitely fucked. 
+*/
+/*
+Jesse: Mentally I am ready for Christmas.
+Jesse: Financially I am not really for Christmas.
+Elijah: Mentally you're ready for Christmas??? 
+*/
+/*
+Caed: When did you get so peppy?
+Jacques: Ever since I assumed I was dead, then I suddenly wasn't.
+Caed: Then remind me to try to kill you once in a while. If I succeed, it will make me feel better, and if I fail, it will make you feel better. Everyone wins! 
+*/
+/*
+Gyrlian: It's weird to think I'm the kid other kid's parents warn them about.
+Margot: I know, right. And I'm becoming the character our teachers always told us about when we were younger.
+Margot: Irresponsible. Unemployed. Giving all my money to drugs. 
+*/
+/*
+Elijah: Balaur told me to "go get it, man!" so i'm going to go get it, man.
+Marcel: get what?
+Elijah: unclear. i'll get everything just to be safe. 
+*/
+/*
+Cassius: Seth, if you ever have trouble making a decision, think about what I would do. And then do the opposite, because I'm a complete idiot. 
+*/
+/*
+Macaire: Looks like an ordinary cell phone, right? It's not, man. It's a metal detector. See, it uses pulse-induction technology that sends out a current that generates a magnetic field, and then...are you even listening? 
+Bash: Yeah. 
+Macaire: Well, what'd I say? 
+Bash: You were explaining how you're still a virgin? 
+*/
+/*
+Niko: Welcome to the 'fuck Seth support group, where we gather to say a collective 'fuck you' to that stupid bitch.
+Niko: But first, a few words from our newest member.
+Margot: So I may have misunderstood- 
+*/
+/*
+Balaur: I regret creating you
+Agnes: Then get rid of me, pussy 
+*/
+/*
+Seth: Cassius what did you do wrong this time
+Cassius: Wrong? By what definition does this exist? Who can truly even say what “right" and “wrong" is when the very nature of morality is subjective? This dichotomy is a completely artificial concept, so to define any human action as good or evil is—
+Seth: did you kill someone again?
+Cassius:
+Cassius: ...yes
+*/
+/*
+Vincent: I got grounded for a whole week just because I came home late.
+Jacques: Well, you deserved it. I mean, getting everyone's hopes up like that and then showing up again. 
+*/
+/*
+Gal: Such beautiful scenery... Silence... Only you and me
+Gal: You really are that romantic, huh?
+Agnes: ...We're on a chairlift. 
+*/
+/*
+Lottie, when Artem takes off coat: hang here
+Artem: Gladly, but it's too low and I can't
+Lottie:
+Artem:
+Lottie: I meant your fucking clothes 
+*/
+/*
+Niko: Artem, have you ever been lonely?
+Artem: Of course not! I remain lonely. 
+*/
+/*
+Ediel: I can excuse racism, but I draw the line at animal cruelty.
+Gyrlian: You can excuse racism?! 
+*/
+/*
+Artem, in Durmstrang: I gotta look at the bright side. Maybe I'll still get kicked out of school.
+Niko: Maybe you could blow something up. They're really strict about that.
+Artem: I was thinking about a more subtle approach like, excessively not studying. 
+*/
+/*
+Caliban: Remember kids! Be yourself, stay healthy, commit arson, steal from the government, and eat the rich-
+Acacia: Okay, that's enough. 
+*/
+/*
+Jacques: Hey Caed, I'm writing my autobiography. Do you have any tips?
+Caed: Kill off the main character. 
+*/
+/*
+Balaur: Gentle reminder not to eat too much candy before bed!
+Agnes: No.
+Balaur: This was supposed to be a gentle reminder, yet your words of defiance bring me ungodly amounts of rage. 
+*/
+/*
+Seth: Do you trust me?
+Sypha: No.
+Seth: I'll take that as a yes. 
+*/
+/*
+Celine: How would you rate your pain?
+Caed: 0/10.
+Celine: How- Your arm is literally going the wrong way-
+Caed: As in 0/10 would NOT recommend.
+Celine:
+Caed: Very not Gucci, does not slap, no thanks.
+*/
+/*
+Merle: You want a latte or a caramel macchiato?
+Arden: I'm mature now. I only drink espresso shots.
+Merle: Why are your hands shaking?
+Arden: This is my fifth one. I may have a problem. 
+*/
+/*
+Ediel: You're the best character I've ever met!
+Seth: I've literally killed five people. 
+*/
+/*
+Cicero: I said if I didn't become a star by 20 I was just gonna become a serial killer
+Niko: Well, how old are you? I'm getting nervous 
+*/
+/*
+Aurielle: Why on earth would you give a knife to a child?!
+Balaur: Agnes felt unsafe.
+Aurielle: Well, now, I feel unsafe!
+Balaur: I'm sorry.
+Balaur:
+Balaur: Would you like a knife? 
+*/
+/*
+Antares at 4 a.m.: Have you ever fallen in love, Bash?
+Bash, pointedly: I can't even fall asleep. 
+*/
+
+//3 (6)
+/*
+Sypha: This is stupid!
+Agnes: Hey! Nothing we've done so far has been UN-stupid, and we're still alive, aren't we??
+Niko: I can't really argue with that, but I feel like I should.  
+*/
+/*
+Celine: You know, Jacques, you and Caed have a lot in common. I think that you could actually be very good friends with him.
+Jacques: No, I don't think so. The fact that I despise him would always come between us. 
+*/
+/*
+Bash: hugs Macaire
+Macaire: Aww, are you hugging me because you love me?
+Bash: No, it's because I'm fucking clingy 
+*/
+/*
+Arden: So you just woke up this morning and decided to be straight up aggressive instead of the usual passive aggressive?
+Merle: I'm not being aggressive.
+Agnes: Hey, don't fight in front of the bacon. 
+*/
+/*
+Lottie: We're playing Scrabble. It's a nightmare.
+Yelena: Scrabble? Scrabble's great.
+Lottie: Not when you're playing with Macaire. He puts down words like “ephemeral". And I put “dog". 
+*/
+/*
+[At a very long game night...]
+Heather: I think we should let them win the next game.
+Alana: I'm sorry, I don't understand what you just said.
+Lottie, to Macaire: You like taking notes like a nerd. I don't copy anything, I forget it like a cool character. 
+*/
+
+//4 (2)
+/*
+Vincent: I wish there were a better way to deal with Jacques.
+Caed: There is, but we're both too pretty for jail.
+Ediel: Seth, I feel like I'm going to die.
+Seth: We're all gonna die, Ediel.
+Ediel: I meant soon.
+Seth: So did I. 
+*/
+/*
+Niko: Shh, here comes Seth!
+Antares: Quick, Macaire, start talking about boring nerd stuff!
+Macaire: You know, nerd culture is mainstream now, so when you use the word "nerd" derogatorily, it means you're the one that's out of the zeitgeist.
+Antares: Yes, that's perfect. Just like that. 
+*/
+
+   if (peopleNum == 3) {
+     var promptNum = Math.floor((Math.random() * p3) + 1);
+    if (promptNum == 1) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: Last night I found out " + document.getElementById("name2").value +  " is a sleep talker.<br><b>" + document.getElementById("name3").value + "</b>: Oh, really?<br><b>" + document.getElementById("name1").value + "</b>: &quotThe mitochondria is the powerhouse of the cell.&quot Right. In. My. Ear. At 3am.";
+   } 
+    if (promptNum == 2) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: Do you think I enjoy being mother hen to all of you?<br><b>" + document.getElementById("name2").value + "</b>:<br><b>" + document.getElementById("name3").value + "</b>:<br><b>" + document.getElementById("name1").value + "</b>: Okay, fine, it's like crack to me.";
+    }
+    if (promptNum == 3) {
+     a.innerHTML = "[" + document.getElementById("name1").value + " after " + document.getElementById("name2").value + " rejects them ]<br><b>" + document.getElementById("name3").value + "</b>: Quit sulking like a baby!<br><b>" + document.getElementById("name1").value + "</b>: I am sulking like a full grown adult!";
+   }
+   if (promptNum == 4) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: Is " + document.getElementById("name2").value + " always like this when they lose?<br><b>" + document.getElementById("name3").value + "</b>: Oh, yes. You should've been there for the Great Jenga Tantrum of 2015.<br><b>" + document.getElementById("name3").value + "</b>: You bumped the table and you know it!";
+   }
+   if (promptNum == 5) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: Is anyone going to tell me what's going on in here?!<br><b>" + document.getElementById("name2").value + "</b>: It's kind of complicated, but" + document.getElementById("name3").value + "-<br><b>" + document.getElementById("name1").value + "</b>: Got it. Forget I asked.";
+   }
+   if (promptNum == 6) {
+     a.innerHTML =  "<b>" + document.getElementById("name1").value + "</b>: Oh please, " + document.getElementById("name2").value +". You loathe-slash-love " + document.getElementById("name3").value + ". And they loathe-slash-love you back, which is pretty much one step away from matrimony.";
+   }
+   if (promptNum == 7) {
+   a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: Hey ya'll. So, I know I'm the new guy here, but I think I can speak for everyone when I say... I don't know what the fuck is going on.<br><b>Everyone</b>: Agreed.<br><b>" + document.getElementById("name2").value + "</b>: This girl speaks of affairs she knows nothing about!<br><b>" +  document.getElementById("name3").value + "</b>: THAT IS TRUE!<br><b>" +  document.getElementById("name2").value + "</b>: She has no respect!<br><b>" +  document.getElementById("name3").value + "</b>: THAT IS ALSO TRUE!";
+   }
+   if (promptNum == 8) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: One day, you could be a parent.<br><b>" + document.getElementById("name2").value + "</b>: One day? I am a parent.<br><b>" + document.getElementById("name1").value + "</b>: " + document.getElementById("name3").value + " doesn't count-<br><b>" + document.getElementById("name1").value + "</b>: THEY ARE MY CHILD!"
+    }
+   if (promptNum == 9) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + ", walking in bloodied and bruised</b>: ...Hey, guys.<br><b>" + document.getElementById("name2").value + "</b>: Oh my God! What happened to you!? <br><b>" + document.getElementById("name1").value + ", as " + document.getElementById("name3").value + "walks in</b>: " + document.getElementById("name3").value + " misunderstood the meaning of Boxing Day.<br><b>" + document.getElementById("name3").value + "in tears</b>: I am so sorry. I thought it was tradition!";
+    }
+   if (promptNum == 10) {
+     a.innerHTML = 
+     "<b>" + document.getElementById("name1").value + "</b>: This job will require a bit of muscle, so I figured " + document.getElementById("name2").value + " should do it.<br><b>"  + document.getElementById("name3").value + "</b>: What? No. I should do it. I'm a strong.<br><b>" + document.getElementById("name2").value + "</b>: That's debatable.<br><b>" + document.getElementById("name3").value + " Well, I'm stronger than "+ document.getElementById("name3").value + ".<br><b>" + document.getElementById("name2").value + "</b>: I don't accept that.";
+    }
+   if (promptNum = 11) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: I have no fears.<br></b>" + document.getElementById("name2").value + "</b>: What if you woke up one day and " + document.getElementById("name3").value + " was taller than you?<br><b>" + document.getElementById("name1").value + "</b>:<br><b>" + document.getElementById("name1").value + "</b>: I have one (1) fear.";
+   }
+ }
+   if (peopleNum == 4) {
+     var promptNum = Math.floor((Math.random() * p4) + 1);
+    if (promptNum == 1) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: " + document.getElementById("name2").value + " is okay.<br><b>" + document.getElementById("name3").value + "</b>: They are okay? They said they were going to break my legs. And don't tell me they didn't mean it, okay? 'Cause they gave me the dead mackerel eyes. They meant it!<br></b>" + document.getElementById("name1").value + "</b>: " + document.getElementById("name2").value + ", " + document.getElementById("name3").value + " threatened me. They threatened " + document.getElementById("name4").value + ". They probably threatened someone before breakfast this morning. It's what they do. Come on. Grow a pair!";
+   }
+    if (promptNum == 2) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: If " + document.getElementById("name2").value + ", " + document.getElementById("name3").value + " and I were all drowning, who would you save?<br><b>" + document.getElementById("name4").value + "</b>: You morons can't even swim?<br><b>" + document.getElementById("name2").value + "</b>: It's a hypothetical question.<br><b>" + document.getElementById("name3").value + "</b>: Yeah, who would you save?<br><b>" + document.getElementById("name4").value + "</b>: My time and effort.";
+   }
+    }
+   if (peopleNum == 5) {
+     var promptNum = Math.floor((Math.random() * p5) + 1);
+    if (promptNum == 1) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value +"</b>: " + document.getElementById("name2").value + ", check it out! " + document.getElementById("name3").value + " and I made you your favorite- red velvet cake. With a little surprise!<br><b>" + document.getElementById("name4").value + "</b>: I hope they don't have a male dancer popping out of it.<br><b>" + document.getElementById("name5").value + "</b>: Eh, they asked. But they couldn't afford me.";
+   }
+   }
+   if (peopleNum == 6) {
+     var promptNum = Math.floor((Math.random() * p6) + 1);
+    if (promptNum == 1) {
+     a.innerHTML = "<b>No Quotes Available</b>";
+   } 
+    }
+   if (peopleNum == 7) {
+     var promptNum = Math.floor((Math.random() * p7) + 1);
+    if (promptNum == 1) {
+     a.innerHTML = "<b>" + document.getElementById("name1").value + "</b>: " + " [Pointing at the broken coffee machine of Ombrelune.] So. Who broke it? I'm not mad, I just wanna know. <br><b>" + document.getElementById("name2").value + "</b>: ...I did. I broke it.<br><b>" + document.getElementById("name1").value + "</b>: No. No you didn't. " + document.getElementById("name3").value + "?<br><b>" + document.getElementById("name3").value + "</b>: Don't look at me. Look at " + document.getElementById("name4").value + ".<br><b>" + document.getElementById("name4").value + "</b>: What?! I didn't break it.<br><b>" + document.getElementById("name3").value + "</b>: Huh, that's weird. How'd you even know it was broken?<br><b>" + document.getElementById("name4").value + "</b>: Because it's sitting right in front of us and it's broken.<br><b>" + document.getElementById("name3").value + "</b>: Suspicious.<br><b>" + document.getElementById("name4").value + "</b>: No it's not!<br><b>" + document.getElementById("name5").value + "</b>: If it matters, probably not, but " + document.getElementById("name6").value + " was the last one to use it.<br><b>" + document.getElementById("name6").value + "</b>: Liar! I don't even drink that crap!<br><b>" + document.getElementById("name5").value + "</b>: Oh really? Then what were you doing by the coffee cart earlier?<br><b>" + document.getElementById("name6").value + "</b>: I use the wooden stirrers to push back my cuticles. Everyone knows that, " + document.getElementById("name5").value + "!<br><b>" + document.getElementById("name2").value + "</b>: Okay let's not fight. I broke it. Let me pay for it, " + document.getElementById("name2").value + ".<br><b>" + document.getElementById("name1").value + "</b>: No! Who broke it!?<br><b>" + document.getElementById("name4").value + "</b>: " + document.getElementById("name1").value + " ... " + document.getElementById("name7").value + "' been awfully quiet.<br><b>" + document.getElementById("name7").value + "</b>: REALLY?!<br>[Everyone starts arguing.]<br><b>" + document.getElementById("name1").value + "</b>: I broke it. I burned my hand so I punched it. I predict 10 minutes from now they'll be at each other's throats with warpaint on their faces and a pig head on a stick.";
+   } 
+ }
+     if (box1var == 1) {
+       document.getElementById("name1").value = "";
+       box1var = 0;
+  }
+     if (box2var == 1) {
+       document.getElementById("name2").value = "";
+       box2var = 0;
+  }
+     if (box3var == 1) {
+       document.getElementById("name3").value = "";
+       box3var = 0;
+  }
+     if (box4var == 1) {
+       document.getElementById("name4").value = "";
+       box4var = 0;
+  }
+     if (box5var == 1) {
+       document.getElementById("name5").value = "";
+       box5var = 0;
+  }
+     if (box6var == 1) {
+       document.getElementById("name6").value = "";
+       box6var = 0;
+  }
+     if (box7var == 1) {
+       document.getElementById("name7").value = "";
+       box7var = 0;
+  }
+}</script>
+    <style class="silex-inline-styles" type="text/css">.body-initial {background-color: rgba(255,255,255,1); position: static;}.silex-id-1478366444112-1 {background-color: transparent; position: static; margin-top: -1px;}.silex-id-1478366444112-0 {background-color: transparent; min-height: 100px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1474394621033-3 {position: static; margin-top: -1px;}.silex-id-1474394621032-2 {background-color: transparent; min-height: 600px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1478366450713-3 {background-color: transparent; position: static; margin-top: -1px;}.silex-id-1478366450713-2 {background-color: transparent; min-height: 100px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1442914737143-3 {width: 241px; top: 26px; left: 494px; min-height: 51px; position: absolute;}@media only screen and (max-width: 480px) {}</style>
+    <title></title>
+    
+
+    
+<style class="silex-prodotype-style" type="text/css" data-style-id="all-style">.text-element > .silex-element-content {font-family: 'Roboto', sans-serif;}</style><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><style type="text/css" class="silex-style-settings">.website-width {width: 1200px;}@media (min-width: 481px) {.silex-editor {min-width: 1400px;}}</style><!-- Silex HEAD tag do not remove --><!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div align="center"><h1 id="title">Sassafras's Incorrect Quote Generator</h1>
+<hr width="90%">
+<p>Number of characters <select id="characterNumInput" onchange="characterNum()">
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+  <option value="4">Four</option>
+  <option value="5">Five</option>
+  <option value="6">Six</option>
+  <option value="7">Seven</option>
+</select></p>
+<br>
+<table>
+ <tr>
+   <td>
+<input id="name1" type="text" placeholder="Character 1" class="nameInput"></td><td>
+<input id="name2" type="text" placeholder="Character 2" class="nameInput" disabled></td><td>
+<input id="name3" type="text" placeholder="Character 3" class="nameInput" disabled></td><td>
+<input id="name4" type="text" placeholder="Character 4" class="nameInput" disabled></td><td>
+<input id="name5" type="text" placeholder="Character 5" class="nameInput" disabled></td><td>
+<input id="name6" type="text" placeholder="Character 6" class="nameInput" disabled></td><td>
+<input id="name7" type="text" placeholder="Character 7" class="nameInput" disabled></td>
+</tr>
+</table>
+<br><br>
+<button onclick="givePromptF()" id="givePrompt" class="button">Click for prompt</button></div>
+<br>
+<table class="tables" style="width:50%">
+<tr>
+    <td id="line1">
+  </tr>
+</table>
+<br><hr width="90%"><br>
+<table class="tables" style="width:50%">
+  <tr>
+    <td><b>Disclaimer:</b> These prompts are entierly random so with the way I wrote the code there is curently no way to disable shipping of characters. These prompts are not meant to promote adult/minor, incest, abusive or unhealthy relationships it is just putting the characters name into a preexisting prompt.<br><br>This generator was inspired by <a href="https://incorrect-quotes-generator.neocities.org/">ScatterPatter's Incorrect Quote Generator</a> and <a href="https://perchance.org/incorrect-quote-generator">Incorrect Quote Generator</a><br><br><span id="numOfQuotes1"> </span> - One Character<br><span id="numOfQuotes2"> </span> - Two Characters<br><span id="numOfQuotes3"> </span> - Three Characters<br><span id="numOfQuotes4"> </span> - Four Characters<br><span id="numOfQuotes5"> </span> - Five Characters<br><span id="numOfQuotes6"> </span> - Six Characters<br><span id="numOfQuotes7"> </span> - Seven Characters<br><b><span id="totalQuotes"> </span> - Total Quotes</b></td>
+  </tr>
+</table>
+<br><br>
+<table class="tables" style="width:50%">
+  <tr>
+    <td><div class="credit">Credits</div><hr width="30%"><br><b>Generator created by</b>: Sassafras<br><br>All prompts were snagged from twitter by <a href="https://twitter.com/ookifuri">@ookifuri</a>.</td>
+  </tr>
+</table>
+</body>
+</html><!-- End of Silex HEAD tag do not remove --></head>
+
+<body data-silex-id="body-initial" class="body-initial all-style enable-mobile prevent-resizable prevent-selectable editable-style silex-runtime" data-silex-type="container-element" style="">
+    
+
+
+
+
+
+
+
+
+
+    <section data-silex-type="container-element" class="container-element editable-style silex-id-1478366444112-1 section-element prevent-resizable" data-silex-id="silex-id-1478366444112-1" style="">
+        <div data-silex-type="container-element" class="editable-style silex-element-content silex-id-1478366444112-0 container-element website-width" data-silex-id="silex-id-1478366444112-0"></div>
+    </section>
+    <section data-silex-type="container-element" class="container-element editable-style silex-id-1474394621033-3 section-element prevent-resizable" data-silex-id="silex-id-1474394621033-3" style="">
+        <div data-silex-type="container-element" class="editable-style silex-element-content silex-id-1474394621032-2 container-element website-width selected" data-silex-id="silex-id-1474394621032-2"></div>
+    </section>
+    <section data-silex-type="container-element" class="container-element editable-style silex-id-1478366450713-3 section-element prevent-resizable" data-silex-id="silex-id-1478366450713-3" style="">
+        <div data-silex-type="container-element" class="editable-style silex-element-content silex-id-1478366450713-2 container-element website-width" data-silex-id="silex-id-1478366450713-2">
+
+            <div data-silex-id="silex-id-1442914737143-3" class="editable-style silex-id-1442914737143-3 text-element" data-silex-type="text-element" style="">
+                <div class="silex-element-content normal"><p>Powered by <a href="https://www.silex.me/" target="_blank" title="Silex website builder,  free and open source" linktype="LinkTypeExternal">Silex website builder</a></p></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
